@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Generate Drivers</title>
+  </head>
+  <body>
+    <h1>Generate Drivers</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Generate</button>
+    </form>
+    {% if drivers %}
+      <h2>Generated Drivers:</h2>
+      <ul>
+        {% for driver in drivers %}
+          <li>{{ driver.name }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </body>
+</html>

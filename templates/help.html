@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="ajax_dashboard">
+<!-- Hero Start -->
+<section class="bg-half bg-light d-table w-100" style="background: url('images/busi.jpg') center center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="page-next-level">
+                    <h4 class="title"> Hello! <br> How can we help you? </h4>
+
+                    <div class="subcribe-form mt-4 pt-2">
+                        <form>
+                            <div class="mb-0">
+                                <input type="text" id="search_faq_front" name="name" class="border bg-white rounded-pill" required="" placeholder="Search your questions or topic...">
+                                <button type="submit" class="btn btn-pills btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="page-next">
+                        <nav aria-label="breadcrumb" class="d-inline-block">
+                            <ul class="breadcrumb bg-white rounded shadow mb-0">
+                               
+                                <li class="breadcrumb-item"><a href="{% url 'city' %}">Help Center</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Help & Support</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<section class="section" style="padding-bottom: 50px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-5 col-12 d-none d-md-block">
+                <div class="rounded shadow p-4 sticky-bar">
+                    <ul class="list-unstyled mb-0" id="quation_list">
+                        <li><a href="javascript:void(0);" fdi="cp_qua_12"  class="mouse-down h6 text-dark">Customers</a></li><li class="mt-4"><a href="javascript:void(0);" fdi="cp_qua_11" class="mouse-down h6 text-dark">Businesses</a></li><li class="mt-4"><a href="javascript:void(0);" fdi="cp_qua_8" class="mouse-down h6 text-dark">Drivers</a></li><li class="mt-4"><a href="javascript:void(0);" fdi="cp_qua_6" class="mouse-down h6 text-dark">Support</a></li>                    </ul>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-8 col-md-7 col-12">
+                <div class="cp_qua" id="cp_qua_12"><div class="section-title mt-5 tag_p" id="quation12" cityname = "how to register on website and mobile applications ?,how to book driver ?,what is the payment options ?,how much time does it takes to assign and captain ?">
+                            <h4>Customers</h4>
+                        </div><div class="accordion mt-4 pt-2" id="Customers">                               <div class="accordion-item rounded mt-2 tag_p" cityname="how to register on website and mobile applications ?" heading="quation12">
+                                    <h3 class="accordion-header" id="heading5">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                            aria-expanded="false" aria-controls="collapse5">
+                                            How to register on Website and Mobile Applications ?                                        </button>
+                                    </h3>
+                                    <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>You need to click on login and verify your mobile number with OTP that's it.</p>                                        </div>
+                                    </div>
+                                </div>
+                                                              <div class="accordion-item rounded mt-2 tag_p" cityname="how to book driver ?" heading="quation12">
+                                    <h3 class="accordion-header" id="heading6">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                            aria-expanded="false" aria-controls="collapse6">
+                                            How to book driver ?                                        </button>
+                                    </h3>
+                                    <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>You can choose as per your need for outstation or in city rides you have to book a captain with the booking form.</p>                                        </div>
+                                    </div>
+                                </div>
+                                                              <div class="accordion-item rounded mt-2 tag_p" cityname="what is the payment options ?" heading="quation12">
+                                    <h3 class="accordion-header" id="heading7">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+                                            aria-expanded="false" aria-controls="collapse7">
+                                            What is the payment options ?                                        </button>
+                                    </h3>
+                                    <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>You can select cash or online at the time of driver booking.</p>                                        </div>
+                                    </div>
+                                </div>
+                                                              <div class="accordion-item rounded mt-2 tag_p" cityname="how much time does it takes to assign and captain ?" heading="quation12">
+                                    <h3 class="accordion-header" id="heading8">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
+                                            aria-expanded="false" aria-controls="collapse8">
+                                            How much time does it takes to assign and captain ?                                        </button>
+                                    </h3>
+                                    <div id="collapse8" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>It will take maximum of 10 minutes else ride will be canceled automatically.</p>                                        </div>
+                                    </div>
+                                </div>
+                               </div></div><div class="cp_qua" id="cp_qua_11"><div class="section-title mt-5 tag_p" id="quation11" cityname = "how businesses can do enquiry ?,how businesses will hire driver for daily or monthly?">
+                            <h4>Businesses</h4>
+                        </div><div class="accordion mt-4 pt-2" id="Businesses">                               <div class="accordion-item rounded mt-2 tag_p" cityname="how businesses can do enquiry ?" heading="quation11">
+                                    <h3 class="accordion-header" id="heading9">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
+                                            aria-expanded="false" aria-controls="collapse9">
+                                            How businesses can do enquiry ?                                        </button>
+                                    </h3>
+                                    <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>You can send us your enquiry for business use. Just send us your details using hire or business form.</p>                                        </div>
+                                    </div>
+                                </div>
+                                                              <div class="accordion-item rounded mt-2 tag_p" cityname="how businesses will hire driver for daily or monthly?" heading="quation11">
+                                    <h3 class="accordion-header" id="heading10">
+                                        <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
+                                            aria-expanded="false" aria-controls="collapse10">
+                                            How businesses will hire driver for daily or monthly?                                        </button>
+                                    </h3>
+                                    <div id="collapse10" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#buyingquestion">
+                                        <div class="accordion-body text-muted bg-white">
+                                            <p>Businesses can hire driver on daily or monthly basis. They can hire on trip basis also and make payment online or offline.&nbsp;</p>                                        </div>
+                                    </div>
+                                </div>
+                               </div></div><div class="cp_qua" id="cp_qua_8"><div class="section-title mt-5 tag_p" id="quation8" cityname = "">
+                            <h4>Drivers</h4>
+                        </div><div class="accordion mt-4 pt-2" id="Drivers"></div></div><div class="cp_qua" id="cp_qua_6"><div class="section-title mt-5 tag_p" id="quation6" cityname = "">
+                            <h4>Support</h4>
+                        </div><div class="accordion mt-4 pt-2" id="Support"></div></div>              
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex align-items-center features feature-clean shadow rounded p-4">
+                    <div class="icons text-primary text-center">
+                        <i class="uil uil-envelope-check d-block rounded h3 mb-0"></i>
+                    </div>
+                    <div class="flex-1 content ms-4">
+                        <h5 class="mb-1"><a href="city.html" class="text-dark">Get in Touch !</a></h5>
+                        <p class="text-muted mb-0">This is required when, for text is not yet available.</p>
+                        <div class="mt-2">
+                            <a href="city.html" class="btn btn-sm btn-soft-primary">Submit a Request</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="d-flex align-items-center features feature-clean shadow rounded p-4">
+                    <div class="icons text-primary text-center">
+                        <i class="uil uil-phone d-block rounded h3 mb-0"></i>
+                    </div>
+                    <div class="flex-1 content ms-4">
+                        <h5 class="mb-1"><a href="javascript:void(0)" class="text-dark">Still need help</a></h5>
+                        <p class="text-muted mb-0"> Call us </p>
+                        <div class="mt-2">
+                            <a   >+91 91744 52344</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+</div>
+
+ 
+{% endblock content %}

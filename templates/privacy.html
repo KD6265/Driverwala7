@@ -1,0 +1,530 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="ajax_dashboard">
+<!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100 d-print-none" style="background: url('images/busi.jpg') center center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title"> Privacy Policy </h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="list-inline-item h6 date text-muted"> <span class="text-dark">Last Revised :</span> 2nd March, 2023</li>
+                            </ul>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                      
+                                        <li class="breadcrumb-item"><a href="{% url 'city' %}">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Privacy</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->   
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+        
+        <!-- Start Privacy -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body">
+                                <h5 class="card-title"> Introduction</h5>
+                                <p class="text-muted">When you use Drivars, you trust us with your personal data. We’re committed to keeping that trust. That starts with helping you understand our privacy practices.</p>
+                                <p class="text-muted"> This notice describes the personal data we collect, how it’s used and shared, and your choices regarding this data. We recommend that you read this along with our privacy overview, which highlights key points about our privacy practices.</p>
+                           
+                            
+                                <h5 class="card-title">Overview</h5>
+                                 <p class="text-muted"> <b>Scope</b><br>
+This notice applies to users of Drivars services anywhere in the world, including users of Drivars apps, websites, features, or other services.</p>
+<p class="text-muted"> This notice describes how Drivars and its affiliates collect and use personal data. This notice applies to all users of our apps, websites, features, or other services anywhere in the world, unless covered by a separate privacy notice, such as the Drivars Freight Privacy Notice or Careem Privacy Policy. This notice specifically applies to:</p>
+<p class="text-muted"><b>Riders:</b> individuals who request or receive drivers, including those who receive transportation requested by another individual</p>
+<p class="text-muted"><b>Drivers:</b> individuals who drive vehicles to Riders individually or through partner transportation companies</p>
+    <p class="text-muted">This notice also governs Drivars other collections of personal data in connection with its services. For example, we may collect the contact information of individuals who use accounts owned by Drivars for Business customers, or of owners or employees of restaurants or other merchants; personal data of those who start but do not complete applications to be drivers or delivery persons; or other personal data in connection with our mapping technology and features.</p>
+
+    <p class="text-muted">All those subject to this notice are referred to as “users” in this notice.</p>
+
+    <p class="text-muted"><b>For Guest Users:</b> The personal data of those who order or receive trips or deliveries via partner websites or apps (such as when ordering from a restaurant or other merchant), or arranged by other account owners (collectively “Guest Users”) is used solely to provide such trips, deliveries, or other services requested through a third party, and for purposes of safety and security, customer support, research and development, enabling communication between users, and in connection with legal proceedings and requirements, each as described in “How we use personal data” below. Guest User personal data may be shared with third parties for these purposes. Such data may be associated with, and accessible by, the owner of that account. </p>
+
+<p class="text-muted">Data controller and transfer</p>
+<p class="text-muted">Drivars is the data controller for the personal data collected in connection with use of Drivars services everywhere else.</p>
+
+<p class="text-muted">Drivars operates, and processes personal data, globally. We may also transfer such data to countries other than the one where our users live or use Drivars services. We do so in order to fulfill our agreements with users, such as our Terms of Use, or based on users’ prior consent, adequacy decisions for the relevant countries, or other transfer mechanisms as may be available under applicable law, such as the Standard Contractual Clauses.</p>
+
+                                <h5 class="card-title">Data collections and uses</h5>
+
+                                <p class="text-muted">The following personal data is collected by or on behalf of Drivars:</p>
+
+                                <p class="text-muted"><b>1. Data provided by users</b> This includes:</p>
+
+<p class="text-muted"><b>User profile: </b>We collect data when users create or update their Drivars accounts. This may include their name, email, phone number, login name and password, address, profile picture, payment or banking information (including related payment verification information), driver’s license and other government identification documents (which may indicate document numbers as well as birth date, gender, and photo). This also includes vehicle or insurance information of drivers and delivery persons, emergency contact information, user settings, and evidence of health or fitness to provide services using Drivars apps.</p>
+
+<p class="text-muted">This also includes gender and/or occupation (when required for certain Drivars services or programs, such as Drivars Cash or features that enable women to provide services or receive services to/from other women).</p>
+
+<p class="text-muted">We may use the photos submitted by users to verify their identities, such as through facial verification technologies. For more information, please see the section titled “How we use personal data.”</p>
+
+<p class="text-muted"><b>Background check and identity verification (drivers and delivery persons):</b> This may include information such as driver history or criminal record (where permitted by law), license status, known aliases and prior addresses, and right to work. This information may be collected by an authorized vendor on Drivars behalf. We also verify the identities of riders, and of delivery recipients who request alcohol delivery.</p>
+
+<p class="text-muted"><b>Demographic data: </b> We may collect demographic data about users, including through user surveys. In some countries, we may also receive demographic data about users from third parties.
+
+We may also infer demographic data from other data collected from users. For example, where necessary to enable features that allow women to provide or receive services from other women, we may infer gender using their first name. In such cases, we enable users to change their gender if necessary via in-app settings.</p>
+
+<p class="text-muted"><b>User content:</b> We collect the data submitted by users when they contact Drivars customer support, provide ratings or compliments for other users, or otherwise contact Drivars. This may include feedback, photographs or other recordings collected by users, including audio or video recordings (such as from dashcams) submitted by users in connection with customer support. This also includes metadata relating to the method you use to communicate with Drivars.</p>
+
+<p class="text-muted"><b>Travel information:</b> We collect travel itinerary information, including the times and dates of upcoming flight, lodging or car rental reservations, from users of our Drivars Travel feature. We collect such information: (i) when users manually input their information into an Drivars Travel itinerary; or (2) if authorized by users to access their Gmail accounts, from traveled-related email confirmations. If so authorized, Drivars will only access users’ Gmail accounts to collect travel itinerary information to enable the Drivars Travel feature, and will adhere to Google’s API Services User Data Policy, including the limitations on use of data collected from users’ Gmail accounts.</p>
+
+<p class="text-muted"><b>2. Data created during use of our services.</b> This includes:</p>
+    
+                                <p class="text-muted"><b>Location data (driver and delivery person):</b> We collect drivers’ and delivery persons’ precise or approximate location data, including to enable rides and deliveries, to enable ride/delivery tracking and safety features, to prevent and detect fraud, and to satisfy legal requirements. Drivars collects this data when the Drivars app is running in the foreground (app open and on-screen) or background (app open but not on-screen) of their mobile device.</p>
+
+                                <p class="text-muted">Location data (riders and delivery recipients). We collect riders’ and delivery recipients’ precise or approximate location data to enable and enhance use of our apps, including to improve pick-ups, facilitate deliveries, enable safety features, and prevent and detect fraud. Please see our Rider Location Help page for detailed information on how we use this data.
+</p>
+
+<p class="text-muted">We collect such data from users’ mobile devices if they enable us to do so. (See “Choice and transparency” below for information on how riders and delivery recipients can enable location data collection). Drivars collects such data from the time a ride or delivery is requested until it is finished (and may indicate such collection via an icon or notification on your mobile device depending on your device’s operating system), and any time the app is running in the foreground (app open and on-screen) of their mobile device.</p>
+
+<p class="text-muted">Riders and delivery recipients may use the Drivars apps without enabling Drivars to collect precise location data from their mobile devices. However, this may affect features in the Drivars apps. For example, a user who has not enabled location data collection will have to manually enter their pick-up address. In addition, the location data collected from a driver during a trip will be linked to the rider’s account, even if the rider has not enabled location data to be collected from their device, including for purposes of receipt generation, customer support, fraud detection, insurance, and litigation.</p>
+
+<p class="text-muted"><b>Transaction information:</b> We collect transaction information related to the use of our services, including the type of services requested or provided, order details, payment transaction information (such as a restaurant’s or merchant's name and location and amount of transaction), delivery information, date and time the service was provided, amount charged, distance traveled, and payment method. Additionally, if someone uses your promotion code, we may associate your name with that person.</p> 
+
+<p class="text-muted"><b>Usage data:</b> We collect data about how users interact with our services. This includes data such as access dates and times, app features or pages viewed, app crashes and other system activity, and type of browser. We may also collect data regarding the third-party sites or services used before interacting with our services, which we use for marketing. (Please see "How We Use Data" below for more information on how we market our services to users).
+</p>
+
+<p class="text-muted">In some cases, we collect this data through cookies, pixels, tags, and similar tracking technologies that create and maintain unique identifiers. To learn more about these technologies, please see our Cookie Notice.</p>
+
+<p class="text-muted"><b>Device data:</b> We may collect data about the devices used to access our services, including the hardware models, device IP address or other unique device identifiers, operating systems and versions, software, preferred languages, advertising identifiers, device motion data, and mobile network data.</p>
+
+<p class="text-muted"><b>Communications data:</b> We enable users to communicate with each other and Drivars through Drivars mobile apps and websites. For example, we enable drivers and riders, and delivery persons and delivery recipients, to call, text, or send other files to each other (generally without disclosing their telephone numbers to each other). To provide this service, Drivars receives some data regarding the calls, texts, or other communications, including the date and time of the communications and the content of the communications. Drivars may also use this data for customer support services (including to resolve disputes between users), for safety and security purposes, to improve our services and features, and for analytics.</p>
+
+<p class="text-muted"><b>Safety recordings: </b>In certain jurisdictions, and where permitted by law, users can record the audio and/or video of their trips through an in-app feature or using a dashcam. In app recordings are encrypted and stored on users’ devices, and are only shared with Drivars if submitted to customer support by the users in connection with safety incidents. Please see here more information.</p>
+  <p class="text-muted"><b>3. Data from other sources. These include:</b></p>
+
+  <p class="text-muted">Users participating in our referral programs. For example, when a user refers to another person, we receive the referred person’s personal data from that user.</p>
+
+  <p class="text-muted">Drivars account owners who request services for or on behalf of other users, or who enable such users to request or receive services through their accounts. This includes owners of Drivars for Business accounts. </p>
+
+  <p class="text-muted">Users or others providing information in connection with claims or disputes.</p>
+
+  <p class="text-muted">Drivars business partners through which users create or access their Drivars account, such as payment providers, social media services, or apps or websites that use Drivars APIs or whose APIs Drivars uses.</p>
+
+  <p class="text-muted">Drivars business partners in connection with payment gateways issued by a financial institution in partnership with Drivars to the extent disclosed in the terms and conditions for the card.</p>
+
+  <p class="text-muted">Vendors who help us verify users’ identity, background information, and eligibility to work, or who screen users in connection with sanctions, anti-money laundering, or know-your-customer requirements.</p>
+
+  <p class="text-muted">Insurance, vehicle, or financial services providers for drivers and/or delivery persons.</p>
+
+  <p class="text-muted">Partner transportation companies (for drivers or delivery persons who use our services through an account associated with such a company)</p>
+
+  <p class="text-muted">Publicly available sources</p>
+
+  <p class="text-muted">Marketing service providers or data resellers whose data Uber uses for marketing or research</p>
+
+  <p class="text-muted">Law enforcement officials, public health officials, and other government authorities</p>
+
+  <p class="text-muted">Drivars may combine the data collected from these sources with other data in its possession.</p>
+
+<h5 class="card-title">How we use personal data</h5>
+
+  <p class="text-muted">We use personal data we collect:</p>
+
+
+  <p class="text-muted"><b>1. To provide our services</b> Drivars uses data to provide, personalize, maintain, and improve our services.</p>
+
+  <p class="text-muted">This includes using data to:</p>
+
+  <p class="text-muted">Create/update accounts</p>
+
+  <p class="text-muted">Enable transportation and delivery services (such as using location data to facilitate a pick up or delivery), features that involve data sharing (such as fare splitting, ETA sharing, and ratings and compliments), and accessibility features to facilitate use of our services by those with disabilities</p>
+
+  <p class="text-muted">Process payments</p>
+
+  <p class="text-muted">Track and share the progress of rides or deliveries</p>
+
+  <p class="text-muted">Create Drivars travel itineraries and offer related services, such as rides to the airport, rental car reservations, or food deliveries.
+</p>
+
+  <p class="text-muted">Personalize users’ accounts. We may, for example, present an Drivars Eats user with personalized restaurant or food recommendations based on their prior orders. Please see the section of this notice titled “Choice and transparency” to learn how to object to this use of personal data.
+</p>
+
+<p class="text-muted">Facilitate insurance, vehicle, invoicing, or financing solutions
+</p>
+
+  <p class="text-muted">Perform necessary operations to maintain our services, including to troubleshoot software bugs and operational problems; to conduct data analysis, testing, and research; and to monitor and analyze usage and activity trends</p>
+
+  <p class="text-muted">Drivars performs the above activities, including the collection and use of location data for purposes of these activities, on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users.</p>
+
+  <p class="text-muted"><b>2. Safety and security</b> We use personal data to help maintain the safety, security, and integrity of our services and users. This includes:</p>
+
+  <p class="text-muted">Verifying users' identity and eligibility to provide transportation or deliveries, including through reviews of background checks, where permitted by law, to help prevent use of our services by unsafe drivers and/or riders.</p>
+
+  <p class="text-muted">Using data from drivers’ or delivery persons’ devices to detect unsafe driving behavior such as speeding or harsh braking and acceleration, and to inform them of safer driving practices. We also use data from delivery persons’ devices to verify the type of vehicles they used to provide deliveries.</p>
+
+  <p class="text-muted">Using device, location, user profile, usage, and other data to prevent, detect, and combat fraud. This includes identifying fraudulent accounts or uses of our services, preventing use of our services by unauthorized drivers or delivery persons, verifying user identities in connection with certain payment methods, and preventing and combating unauthorized access to users’ accounts.</p>
+
+  <p class="text-muted">Using user ratings, reported incidents, and other feedback to encourage compliance with our Community Guidelines and as grounds for deactivating users with low ratings or who otherwise violated such guidelines in certain countries.</p>
+
+  <p class="text-muted">Sharing information regarding serious driver or delivery person safety incidents or compliance with local regulations with third parties, including other companies who enable users to request or provide rides or delivery services, or intermediaries who collect and report such information for multiple companies, to prevent drivers or delivery persons who may pose a safety risk to the platform or its users from using Drivars or those other companies’ services. We may also share with third parties, including those affected by such incidents, whether the incidents result in account deactivation.</p>
+
+  <p class="text-muted">Using ratings, usage and other data to prevent matching of riders and drivers for whom there is higher risk of conflict (for instance, because one user previously gave the other a one-star rating).</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users, and/or for purposes of the legitimate safety and security interests of Drivars or other parties, including users and members of the general public.</p>
+
+  <p class="text-muted"><b>3. Customer support</b> Drivars uses the information we collect (which may include call recordings) to provide customer support, including to investigate and address user concerns and to monitor and improve our customer support responses and processes.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users.</p>
+
+  <p class="text-muted"><b>4. Research and development</b> We may use personal data for testing, research, analysis, product development, and machine learning to improve the user experience. This helps us make our services more convenient and easy-to-use, enhance the safety and security of our services, and develop new services and features.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfil our obligations to users under our Terms of Use or other agreements with users in improving our existing services and features, or for purposes of Drivars legitimate interests developing new services and features.</p>
+
+  <p class="text-muted"><b>5. Enabling communications between users</b> For example, a driver may message or call a rider to confirm a pickup location, a rider may contact a driver to retrieve a lost item, or a restaurant or delivery person may call a delivery recipient with information about their order.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users.</p>
+
+  <p class="text-muted"><b>6. Marketing</b> Drivars may use personal data to market our services to our users. This includes sending users communications about Drivars services, features, promotions, sweepstakes, studies, surveys, news, updates, and events. We may do so through various methods, including email, text messages, push notifications, in app communications and ads, and ads on third party platforms.</p>
+  
+  <p class="text-muted">We may also inform users about products and services offered by Drivars partners. For example, we may provide recommendations, promotions, or ads for Drivars partners based on users’ past delivery orders. Although we inform users about products and services offered by Drivars partners, we do not sell users’ personal data to, or share it with, such partners or others for purposes of their own direct marketing or advertising, except with users’ consent.</p>
+  
+  <p class="text-muted">We may use the data we collect, including in combination with advertising partners’ data, to personalize and improve the marketing communications (including ads) that we send on and off Drivars apps and websites, including based on user location, use of Drivars services, and user preferences and settings. For example, we share user data (such as hashed email address, usage information, and device or user identifiers) with Facebook and TikTok to personalize and improve our ads for Drivars services.</p>
+
+
+  <p class="text-muted">For information about how to opt out of certain marketing communications (including ads) from Drivars and its advertising partners, please see the section titled “Marketing choices.”</p>
+
+  <p class="text-muted">We may also send users communications regarding elections, ballots, referenda, and other political and notice processes that relate to our services. For example, Drivars has notified some users by email of ballot measures or pending legislation relating to Drivars services in those users’ areas.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary for purposes of Drivars legitimate interests in informing users about Drivars services and features or those offered by Drivars partners, or on the basis of user consent. See the sections titled “Choice and transparency” and “Marketing choices” for information on your choices regarding Drivars use of your data for marketing.</p>
+
+  <p class="text-muted"><b>7. Non-marketing communications</b> Drivars may use personal data to generate and provide users with receipts; inform them of changes to our terms, services, or policies; or send other communications that aren’t for the purpose of marketing the services or products of Drivars or its partners.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users, or for purposes of Drivars and it’s users legitimate interests in informing users about events that may have an impact on how they can use Drivars services.</p>
+
+  <p class="text-muted"><b>8. Legal proceedings and requirements</b> We may use personal data to investigate or address claims or disputes relating to use of Drivars services, to satisfy requirements under applicable laws, regulations, or operating licenses or agreements, or pursuant to legal process or governmental request, including from law enforcement.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary for purposes of Drivars legitimate interests in investigating and responding to claims and disputes relating to use of Drivars services and features, and/or necessary for compliance with applicable legal requirements.</p>
+
+  <p class="text-muted"><b>9. Automated decision-making</b></p>
+
+  <p class="text-muted">We use personal data to make automated decisions relating to use of our services. This includes:</p>
+
+  <p class="text-muted">Enabling dynamic pricing, in which the price of a ride, or the delivery fee for Drivars Eats orders, is determined based on constantly varying factors such as the estimated time and distance, the predicted route, estimated traffic, and the number of riders and drivers using Drivars at a given moment.</p>
+
+    <p class="text-muted">Matching available drivers and delivery persons to users requesting services. Users can be matched based on availability, proximity, and other factors such as likelihood to accept a trip based on their past behavior or preferences.  </p>
+
+
+  <p class="text-muted">Determining user ratings, and deactivating users with low ratings. In the European Union or where otherwise required by law, such deactivation occurs only after human review and/or the possibility to appeal. </p>
+
+  <p class="text-muted">Flagging users who are identified as having engaged in fraud, unsafe activity, or other activities that may harm Drivars, its users, and others. In some cases, such as when a user is determined to be abusing Drivars referral program or has submitted fraudulent documents, such behavior may result in automatic deactivation, or in the European Union or where otherwise required by law, deactivation after human review.</p>
+
+  <p class="text-muted">Using driver location information, and communications between riders and drivers, to identify cancellation fees earned or induced through fraud. For example, if we determine by using such information that a driver is delaying a rider pickup in order to induce a cancellation, we will not charge the rider a cancellation fee and will adjust the amounts paid to the driver to omit such a fee. To object to such an adjustment, please contact Drivars customer support.</p>
+
+  <p class="text-muted">Using driver data (such as location, rating and gender) and rider data (such as rating, origin and destination) to help avoid pairings of users that may result in increased risk of conflict.</p>
+
+  <p class="text-muted">Click the links in this section for more information about these processes. To object to a deactivation resulting from these processes, please contact Drivars customer support.</p>
+
+  <p class="text-muted">Drivars performs the above activities on the grounds that they are necessary to fulfill our obligations to users under our Terms of Use or other agreements with users, or on the grounds that they are necessary for purposes of the legitimate interests of Drivars, its users and others.</p>
+
+  <h5 class="card-title">Cookies and third-party technologies</h5>
+
+  <p class="text-muted">Drivars and its partners use cookies and other identification technologies on our apps, websites, emails, and online ads for purposes described in this notice, and Drivars Cookie Notice.</p>
+
+<p class="text-muted">Cookies are small text files that are stored on browsers or devices by websites, apps, online media, and advertisements. Drivars uses cookies and similar technologies for purposes such as:</p>
+
+<p class="text-muted">Authenticating users</p>
+
+<p class="text-muted">Remembering user preferences and settings
+</p>
+
+<p class="text-muted">Determining the popularity of content
+</p>
+
+<p class="text-muted">Delivering and measuring the effectiveness of advertising campaigns
+</p>
+
+<p class="text-muted">Analyzing site traffic and trends, and generally understanding the online behaviors and interests of people who interact with our services
+</p>
+
+<p class="text-muted">We may also allow others to provide audience measurement and analytics services for us, to serve advertisements on our behalf across the Internet, and to track and report on the performance of those advertisements. These entities may use cookies, web beacons, SDKs, and other technologies to identify the devices used by visitors to our websites, as well as when they visit other online sites and services.
+
+</p>
+
+<h5 class="card-title">Data sharing and disclosure</h5>
+
+<p class="text-muted">Some of Drivars services and features require that we share personal data with other users or at a user’s request. We may also share such data with our affiliates, subsidiaries, and partners, for legal reasons or in connection with claims or disputes.</p>
+
+<p class="text-muted">Drivars may share personal data:</p>
+
+<p class="text-muted"><b>1. With other users</b>
+
+</p>
+
+<p class="text-muted">This includes sharing:
+
+</p>
+
+<p class="text-muted">Riders’ first name, rating, and pickup and/or dropoff locations with drivers
+</p>
+
+<p class="text-muted">Riders’ first name with other riders in a carpool trip. Riders in carpool trips may also see the dropoff location of the other riders.
+</p>
+
+<p class="text-muted">Delivery recipients’ first name, delivery address, and order information with their delivery person and restaurant or merchant. We may also share ratings and feedback, or other information to the extent required by law, with the restaurant partner and delivery person.
+</p>
+
+<p class="text-muted">For drivers and delivery persons, we may share data with the rider(s), delivery recipient(s) and restaurants or merchants, including name and photo; vehicle make, model, color, license plate, and vehicle photo; location (before and during trip); average rating provided by users; total number of trips; period of time since they signed up to be a driver or delivery person; contact information (if permitted by applicable laws); and driver or delivery person profile, including compliments and other feedback submitted by past users.
+</p>
+
+<p class="text-muted">We also provide riders and delivery recipients with receipts containing information such as a breakdown of amounts charged, driver or delivery person first name, photo, and route map. We also include other information on those receipts if required by law.</p>
+
+<p class="text-muted">For those who participate in Drivars referral program, we share certain personal data of referred users, such as trip count, with the user who referred them, to the extent relevant to determining the referral bonus.</p>
+
+<p class="text-muted"><b>2. At the user’s request</b></p>
+
+<p class="text-muted">This includes sharing data with:</p>
+
+<p class="text-muted">Other people at the user’s request. For example, we share a user’s ETA and location with a friend when requested by that user, or a user’s trip information when they split a fare with a friend.</p>
+
+<p class="text-muted">Drivars business partners. For example, if a user requests a service through a partnership or promotional offering made by a third party, Drivars may share certain data with those third parties. This may include, for example, other services, platforms, apps, or websites that integrate with our APIs; vehicle suppliers or services; those with an API or service with which we integrate; or restaurants, merchants or other Drivars business partners and their users in connection with promotions, contests, or specialized services.</p>
+
+<p class="text-muted"><b>3. With the general public</b></p>
+
+<p class="text-muted">Questions or comments from users submitted through public forums such as Drivars blogs and Drivars social media pages may be viewable by the public, including any personal data included in the questions or comments submitted by a user.</p>
+
+<p class="text-muted"><b>4. With the Drivars account owner</b></p>
+
+<p class="text-muted">If a user requests transportation or places an order using an account owned by another party, we may share their order or trip information, including location data, with the owner of that account. </p>
+
+<p class="text-muted"><b>5. With Drivars subsidiaries and affiliates</b></p>
+
+<p class="text-muted">We share personal data with our subsidiaries and affiliates to help us provide our services or conduct data processing on our behalf. For example, Drivars processes and stores such data with the third party server management company.</p>
+
+<p class="text-muted"><b>6. With Drivars service providers and business partners</b></p>
+
+<P class="text-muted">Drivars provides personal data to vendors, consultants, marketing partners, research firms, and other service providers or business partners. These include:
+
+</P>
+
+<P class="text-muted">Payment processors and facilitators
+</P>
+
+<P class="text-muted">Background check and identity verification providers
+</P>
+
+<P class="text-muted">Cloud storage providers
+</P>
+
+<P class="text-muted">Google, in connection with the use of Google Maps in Drivars apps (see Google’s privacy policy for information on their collection and use of data)
+</P>
+
+<P class="text-muted">Social media companies, including Facebook and TikTok, in connection with Drivars use of their tools in Drivars apps and websites (see Facebook’s and TikTok’s privacy policies for information on their collection and use of data)
+</P>
+
+<P class="text-muted">Marketing partners and marketing platform providers, including social media advertising services, advertising networks, third-party data providers, and other service providers to reach or better understand our users and measure advertising effectiveness
+</P>
+
+<P class="text-muted">Research partners, including those performing surveys or research projects in partnership with Drivars or on Drivars behalf
+</P>
+
+<P class="text-muted">Vendors that assist Uber to enhance the safety and security of its apps
+</P>
+
+<P class="text-muted">Consultants, lawyers, accountants, and other professional service providers
+</P>
+
+<P class="text-muted">Insurance and financing partners
+</P>
+
+<P class="text-muted">Airports
+</P>
+
+<P class="text-muted">Providers of bike and scooters that can be rented through Uber apps, such as Lime
+</P>
+
+<P class="text-muted">Restaurants, grocery stores and other merchants from whom delivery recipients place orders, as well as partners and/or their point of sale providers, including for order fulfillment, delivery, communications and marketing purposes
+</P>
+
+<p class="text-muted">Third-party vehicle suppliers, including fleet and rental partners
+</p>
+
+<p class="text-muted"><b>7. For legal reasons or in the event of a dispute
+
+</b></p>
+
+<p class="text-muted">Drivars may share users’ personal data if we believe it’s required by applicable law, regulation, operating license or agreement, legal process or governmental request, or where the disclosure is otherwise appropriate due to safety or similar concerns.
+
+</p>
+
+<p class="text-muted">This includes sharing personal data with law enforcement officials, public health officials, other government authorities, airports (if required by the airport authorities as a condition of operating on airport property), or other third parties as necessary to enforce our Terms of Service, user agreements, or other policies; to protect Drivars rights or property or the rights, safety, or property of others; or in the event of a claim or dispute relating to the use of our services. In the event of a dispute relating to use of another person’s credit card, we may be required by law to share your personal data, including trip or order information, with the owner of that credit card.
+
+</p>
+
+<p class="text-muted">This also includes sharing personal data with others in connection with, or during negotiations of, any merger, sale of company assets, consolidation or restructuring, financing, or acquisition of all or a portion of our business by or into another company.
+
+</p>
+
+<p class="text-muted"><b>8. With consent
+
+</b></p>
+
+<p class="text-muted">Drivars may share a user’s personal data other than as described in this notice if we notify the user and they consent to the sharing.
+
+</p>
+
+<h5 class="card-title">Data retention and deletion</h5>
+
+<p class="text-muted">Drivars retains user data for as long as necessary for the purposes described above. This means that we retain different categories of data for different periods of time depending on the type of data, the category of user to whom the data relates, and the purposes for which we collected the data.</p>
+
+<p class="text-muted">Users may request deletion of their account at any time through the Settings > Privacy menus in the Drivars app, or through Drivars website</p>
+
+<p class="text-muted">Following an account deletion request, Drivars deletes the user’s account and data, unless they must be retained due to legal or regulatory requirements, for purposes of safety, security, and fraud prevention, or because of an issue relating to the user’s account such as an outstanding credit or an unresolved claim or dispute. Because we are subject to legal and regulatory requirements relating to drivers and delivery persons, this generally means that we retain their account and data for a minimum of 7 years after a deletion request. For riders and delivery recipients, their data is generally deleted within 90 days of a deletion request, except where retention is necessary for the above reasons.
+
+</p>
+
+<h5 class="card-title">Choice and transparency
+</h5>
+<p class="text-muted"><b>1. Privacy settings</b></p>
+
+<p class="text-muted">The Settings > Privacy menu in the Drivars app allows riders and delivery recipients to set or update their preferences regarding location data collection and sharing, emergency data sharing, and notifications.
+
+</p>
+
+<p class="text-muted"><b>Location data collection (riders and delivery recipients)
+</b></p>
+
+<p class="text-muted">Riders and delivery recipients can enable/disable Drivars to collect location data from their mobile devices through their device settings, which can be accessed via the Settings > Privacy > Location menu.
+
+</p>
+
+<p class="text-muted"><b>Share Live Location (Riders)</b></p>
+
+<p class="text-muted">Riders can enable/disable Drivars to share their real-time location data from their mobile devices with their drivers through their device settings, which can be accessed via the Settings > Privacy > Location menu.
+
+</p>
+
+<p class="text-muted"><b>Emergency Data Sharing
+</b></p>
+
+<p class="text-muted">Riders may enable Drivars to share real-time location data from their mobile devices with emergency police, fire, and ambulance services. Such data may include approximate location at the time the emergency call was placed; the car’s make, model, color, and license plate information; the rider’s name and phone number; pickup and dropoff locations; and the driver’s name.
+</p>
+
+<p class="text-muted">Riders may enable/disable this feature via the Settings > Privacy > Location menu, or the Safety Center.
+</p>
+
+<p class="text-muted">Drivers and delivery persons can also enable/disable Emergency Data Sharing via the App settings > Emergency Data Sharing menu, or the Safety Toolkit.
+
+</p>
+
+<p class="text-muted"><b>Notifications: account and trip updates
+</b></p>
+
+<p class="text-muted">Drivars provides users with trip status notifications and updates related to activity on their account. These notifications are a necessary part of using the Drivars app and cannot be disabled. However, users may choose the method by which they receive these notifications through the Settings > Privacy menu.
+
+</p>
+
+<p class="text-muted"><b>Notifications: discounts and news</b>
+</p>
+
+<p class="text-muted">Users may enable Drivars to send push notifications about discounts and news from Drivars. Push notifications may be enabled or disabled through the Settings > Privacy menus in the Drivars app.
+
+</p>
+
+ 
+
+<p class="text-muted"><b>2. Device permissions</b></p>
+
+<p class="text-muted">Most mobile device platforms (iOS, Android, etc.) have defined certain types of device data that apps cannot access without the device owner’s permission, and these platforms have different methods for how that permission can be obtained. Please check the available settings on your device or check with your provider.
+
+</p>
+
+<p class="text-muted"><b>3. In-app ratings pages
+
+</b></p>
+
+<p class="text-muted">After every trip, drivers and riders are able to rate each other on a scale from 1 to 5. An average of those ratings is associated with a user’s account and is displayed to other users for whom they provide or receive services. For example, rider ratings are available to drivers from whom they request transportation, and driver ratings are available to their riders.
+
+</p>
+
+<p class="text-muted">This 2-way system holds everyone accountable for their behavior. Accountability helps create a respectful, safe environment for drivers and riders.
+
+</p>
+
+<p class="text-muted">Riders can see their average rating in the main menu of the Drivars app.
+
+</p>
+
+<p class="text-muted">Drivers can see their average rating after tapping their profile photo in the Drivars Team app.
+
+</p>
+
+<p class="text-muted"><b>4. Marketing choices
+
+</b></p>
+
+<p class="text-muted">Users may opt out of certain marketing communications (including ads) and use of their data for marketing in the following ways:
+
+</p>
+
+<p class="text-muted">Ad settings: These settings enable users to choose whether their data is shared with Drivars advertising partners to deliver personalized ads, and/or to measure the effectiveness of such ads.
+</p>
+
+<p class="text-muted">Marketing emails and messages: To opt out of receiving marketing emails from Drivars, or for instructions on how to set your preferences regarding whether to receive marketing SMS or push notifications from Drivars, Users may also opt out of receiving emails and other messages from Drivars by following the unsubscribe instructions in those messages. We may still send users who have opted out non-promotional communications, such as receipts for rides or information about their account.
+</p>
+
+<p class="text-muted">Cookies and related technologies: For information on how to opt out of personalized ads using cookies and related technologies.
+</p>
+
+<p class="text-muted"><b>5. User personal data requests</b></p>
+
+<p class="text-muted">Drivars provides users with a variety of ways to learn about, control, and submit questions and comments about Drivars handling of their personal data.
+
+</p>
+
+<p class="text-muted"><b>Accessing data:</b> Users can access data including their profile data and trip or order history through the Drivars apps or via Drivars website. Users can also use our Explore Your Data feature to view an online summary of information about their account, such as number of trips or orders, rating, rewards status, and number of days since they’ve been an Drivars user. Users can also request access to their data here.
+</p>
+
+<p class="text-muted"><b>Receiving data:</b> Users can request a copy of their personal data using our Download Your Data tool. For an overview of the data available through that tool, please click here. Users may also request a copy of their data here.
+</p>
+
+<p class="text-muted">Changing or updating data: Users can edit the name, phone number, email address, payment method, and photo associated with their account through the Settings menu in Drivars apps or driver portal. Users may also request to update or correct their data here.
+</p>
+
+<p class="text-muted">Deleting data: Users may request deletion of their account at any time through the Settings > Privacy menus in the Drivars app, or through Drivars website (riders and delivery recipients here; drivers and delivery persons here).
+</p>
+
+<p class="text-muted">Objections, restrictions, and complaints: Users may request that we stop using all or some of their personal data, or that we limit our use of their data. This includes objecting to our use of personal data that is based on Drivars legitimate interests. Drivars may continue to process data after such objection or request to the extent required or permitted by law.
+</p>
+
+<h5 class="card-title">V. Updates to this notice</h5>
+
+<p class="text-muted">We may occasionally update this notice. If we make significant changes, we will notify users in advance of the changes through the Drivars apps or through other means, such as email. We encourage users to periodically review this notice for the latest information on our privacy practices.</p>
+
+<p class="text-muted">Use of our services after an update constitutes consent to the updated notice to the extent permitted by law.
+
+</p>
+
+ 
+
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Privacy -->
+</div>
+{% endblock content %} 

@@ -1,0 +1,353 @@
+
+
+       <script type="text/javascript">
+           window.location.href = "../../businessaccount.html";
+       </script>
+       <!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from drivars.com/v2/business/tracking by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Feb 2023 07:56:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Business Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/f1.png">
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    <!-- Vectormap -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+    <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+            var path='index.html';
+            var login_id='';
+    </script>
+    <script src="../../../cdn.socket.io/3.1.3/socket.io.min.js"></script>
+    <script src="../../js/soket8850.js?v=1675238163"></script>
+
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <!-- <img class="logo-abbr" src="/v2/business/images/logo/Drivars2021vb.png" alt=""> -->
+                <img class="logo-compact" src="logo/drivars_logo_white.png" alt="" style="max-width: 230px;">
+                <img class="brand-title" src="logo/drivars_logo_white.png" alt="" style="max-width: 230px;">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="custom-control custom-switch toggle-switch text-right mr-5 mb-2" style="margin-top: 10px; padding-right: 0px;">
+                            
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="_br/__b_Warning_/b__%20%20Undefined%20variable%20%24users%20in%20_b_/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php_/b_%20on%20line%20_b_97_/b__br/__br/__b_Warning_/b__%20%20Attempt%20to%20read%20property.150"img" on null in <b>/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php</b> on line <b>97</b><br />
+/v2/admin/" width="20" alt=""/>
+                                    <div class="header-info">
+                                        <span class="text-black"><br />
+<b>Warning</b>:  Undefined variable $users in <b>/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php</b> on line <b>99</b><br />
+<br />
+<b>Warning</b>:  Attempt to read property "fname" on null in <b>/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php</b> on line <b>99</b><br />
+</span>
+                                        <p class="fs-12 mb-0">Business Account</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="Profile.html" class="dropdown-item ai-icon">
+                                        <i class="fa fa-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="Logout.html" class="dropdown-item ai-icon">
+                                        <i class="fa fa-power-off"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a href="index.html"><i class="flaticon-381-networking"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li><a href="Profile.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Setting</span>
+                        </a>
+                    </li>
+                    <li><a href="employees.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Employees</span>
+                        </a>
+                    </li>
+                    <li><a href="attendance.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Attendance</span>
+                        </a>
+                    </li>
+                    
+                    <li><a href="payment.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Payments</span>
+                        </a>
+                    </li>
+
+                    <li><a href="tracking.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Track Your Driver</span>
+                        </a>
+                    </li>
+
+                    <li><a href="help.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Help</span>
+                        </a>
+                    </li>
+                    
+                    <li><a href="logout-2.html" aria-expanded="false">
+                            <i class="flaticon-381-settings-2"></i>
+                            <span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+        
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+            <br />
+<b>Warning</b>:  Undefined array key "business_master_id" in <b>/home2/codepjxc/drivars.com/v2/business/app/views/tracking/index.php</b> on line <b>9</b><br />
+<br />
+<b>Warning</b>:  Attempt to read property "employee" on bool in <b>/home2/codepjxc/drivars.com/v2/business/app/views/tracking/index.php</b> on line <b>11</b><br />
+<br />
+<b>Deprecated</b>:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in <b>/home2/codepjxc/drivars.com/v2/business/app/views/tracking/index.php</b> on line <b>11</b><br />
+<link rel="stylesheet" href="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+<link rel="stylesheet" href="../../../unpkg.com/leaflet-control-geocoder%402.4.0/dist/Control.Geocoder.css" />
+<style type="text/css">
+    #map 
+    {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .leaflet-top .leaflet-right
+    {
+        display: none !important;
+    }
+</style>                                        
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Track Your employee</h4>
+            </div>
+            <div class="card-body">
+                <div class="col-xl-12">
+                    <select class="form-control" id="emp_id">
+                        <option value="">Select employee</option>
+                                            </select>
+                </div>
+                <div class="col-xl-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="../../../unpkg.com/leaflet-control-geocoder%402.4.0/dist/Control.Geocoder.js"></script>
+    <script>
+        var greenIcon = L.icon({
+            iconUrl: path+'images/handyman-worker.svg',
+            iconSize:     [30, 30], // size of the icon            
+        });
+        var map_init = L.map('map', {
+            center: [20.5937, 78.9629],
+            zoom: 5
+        });
+        var osm = L.tileLayer('../../../%7bs%7d.tile.openstreetmap.org/%7bz%7d/%7bx%7d/%7by%7d.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map_init);
+        L.Control.geocoder().addTo(map_init);
+        if (!navigator.geolocation) {
+            console.log("Your browser doesn't support geolocation feature!")
+        } else {
+            setInterval(() => {
+                navigator.geolocation.getCurrentPosition(getPosition)
+            }, 3000);
+        };
+        var marker, circle, lat, long, accuracy,json;
+        var json = getteamtracker();
+        function getPosition(position) {
+            var id = $("#emp_id").val();
+            $.ajax({
+            type: 'POST',
+                url: path + 'Master/getteamtracker',
+                data: {"id":id},
+                beforeSend: function () {
+                    
+                },
+                success: function (responce) {
+                    console.log(responce);
+                    var json = JSON.parse(responce);
+                    lat = json.latitude
+                    long = json.longitude
+                    accuracy = 500
+                }
+            });            
+
+            if (marker) {
+                map_init.removeLayer(marker)
+            }
+
+            if (circle) {
+                map_init.removeLayer(circle)
+            }
+
+            //marker = L.marker([lat, long])
+            marker =L.marker([lat, long], {icon: greenIcon})
+            circle = L.circle([lat, long], { radius: accuracy })
+
+            var featureGroup = L.featureGroup([marker, circle]).addTo(map_init)
+
+            map_init.fitBounds(featureGroup.getBounds())
+
+            //console.log("Your coordinate is: Lat: " + lat + " Long: " + long + " Accuracy: " + accuracy)
+        }
+
+        function getteamtracker()
+        {
+            
+        }
+    </script>
+
+        </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © 2021 <a href="#">drivars.com</a> </p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+    <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/deznav-init.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.js"></script>
+    
+    <!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    
+    <!-- Datatable -->
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="js/plugins-init/datatables.init.js"></script>
+    <!-- Dashboard 1 -->
+    <script src="js/dashboard/dashboard-1.js"></script>
+    <script src="vendor/toastr/js/toastr.min.js"></script>    
+    <script src="js/my8850.js?v=1675238163"></script>
+    <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from drivars.com/v2/business/tracking by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Feb 2023 07:56:21 GMT -->
+</html>

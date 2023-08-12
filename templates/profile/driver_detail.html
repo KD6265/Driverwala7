@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container emp-profile text-dark bg-light p-5 mt-4 >
+    <form method="post">
+        <div class="row pt-3">
+            <div class="col-md-12 text-center">
+              <h1>Driver Details</h1>
+            </div>
+          </div>
+          
+        
+        <div class="row pt-3 ">
+            <div class="col-md-4 " >
+                <div class="profile-img ">
+                    <img src="{% static 'logo/istockphoto-1289127814-612x612.jpg' %}" style="height: 150px;height: 150px;"  alt=""/>
+
+                </div>
+            </div>
+           <div class="col-md-6">
+        
+    <div class="profile-head ">
+        <div class="text-right  mb-3">
+            {% comment %} <button class="btn btn-primary select-driver" data-driver-id="'+ driver.id +'">Select Driver</button> {% endcomment %}
+            {% comment %} <a type="submit" class="profile-edit-btn" name="btnAddMore"href="{% url 'booking_page'{{driver.id}} %}" value="Edit Profile" >Select Driver</a> {% endcomment %}
+            <a class="profile-edit-btn btn btn-primary" href="{% url 'booking_page' driver.id %}">Select Driver</a>
+
+        </div>
+        <h5>
+            {{driver.fname}} {{driver.lname}}
+        </h5>
+        <h6>
+            Driver type:{{driver.driver_type}}
+        </h6>
+        <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+            </li>
+         
+        </ul>
+    </div>
+</div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+ 
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active mt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>User Id</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        {{driver.id}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>{{driver.fname}} {{driver.mname}} {{driver.lname}} </label>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Age</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>{{driver.age}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>{{driver.email}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Phone</label>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <p>{{driver.phone}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Aadhar No</label>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <p>{{driver.aadharno}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Gear type</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.vytpe}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Address</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.address}}</p>
+                                    </div>
+                                </div>
+                               
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Zip Code</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.zipcode}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>State</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.state}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>District</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.district}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Subdistrict</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p>{{driver.subdistrict}}</p>
+                                    </div>
+                                </div>
+                                
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Driving licence</label>
+                                    </div>
+                                        <div class="col-md-6">
+                                        <p> <a href="{{driver.driving_licence.url}}" target="_blank">View License Image</a></p>
+                                    </div>
+                                </div>
+                                
+                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </form>           
+</div>
+{% endblock content %} 

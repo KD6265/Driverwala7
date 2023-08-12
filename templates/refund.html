@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="ajax_dashboard">
+<!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100" style="background: url('static/images/busi.jpg') center center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title"> Refund Policy </h4>
+                             <ul class="list-unstyled mt-4">
+                                <li class="list-inline-item h6 date text-muted"> <span class="text-dark">Last Revised :</span> 2nd March, 2023</li>
+                            </ul>
+                            
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                       
+                                        
+                                        <li class="breadcrumb-item"><a href="{% url 'city' %}">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Refund Policy</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->  
+        
+        <!-- Start Terms & Conditions -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="card shadow border-0 rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Drivars believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. :
+</h5>
+                               
+
+                                <p class="text-muted">1. The customer agrees and acknowledges that refund shall be processed if the cancellation request is received before 24 hour of scheduled pickup. (Refer point 3 for special cases)</p>
+                                
+                                <p class="text-muted">2. The Cancellation can be done over the phone or by email. All cancellation to be made against the booking ID provided at the time of booking the driver.
+
+</p>
+                                
+                                 <p class="text-muted"> 3. No cancellations are entertained in any case for those products/Service that Drivars marketing team has obtained on special occasions like Dussehra, Pongal, Diwali, New year etc. These are limited occasion offers and therefore cancellations are not possible.
+
+</p>
+
+                                 <p class="text-muted">4. Drivars will not be responsible for any cancellation/delay of service in case of any natural calamity, agitation, Strike or Road Jam/traffic etc. Hence no refund would be made.
+
+</p>
+                                 
+
+                                 <p class="text-muted"> 5. The customer agrees and acknowledges that no refund shall be processed if the cancellation request is received within 24 hours of scheduled pickup.
+
+</p>
+							                                 <p class="text-muted"> 6. Drivars might change driver details prior to boarding the vehicle in case of driver unavailability or other genuine reasons at Driver’s end. No Cancellation request shall be entertained in such cases.
+
+								<p class="text-muted">7. Drivars reserves the right to cancel/change the booking of driver at any point of time.
+
+</p>
+								<p class="text-muted">If you are eligible for refunds based on the "Cancellation and Returns" policy above, then the refund will be remitted back to you in 5-7 working days. In case of any issues, write to us at driverwala@gmail.com or call us at +91 8469972331.
+
+</p>
+								
+								</section>
+							</div>
+
+{% endblock content %} 

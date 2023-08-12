@@ -1,0 +1,610 @@
+body
+{
+	width: 100%;
+	height: auto;
+}
+.avatar.avatar-md-sm
+{
+	height: 40px !important;
+	width: 40px !important;
+	margin-top: 18px !important;
+}
+.navbar-nav
+{
+	margin-top: 13px;
+}
+.navbar
+{
+	min-height: 71px;
+	border: none;
+	border-radius: 0px !important;
+	margin-bottom: 0px;
+}
+.booking_section
+{
+	background: url('../img/booking/78786-min.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0px;
+	margin-top: 75px;
+}
+.tra 
+{
+	height: 100vh;
+	background: #03b7cc26;
+}
+label
+{
+	margin-top: 10px;
+}
+.input-group .input-group-addon
+{
+	background: #fff;
+}
+
+.btn
+{
+	font-size: 16px;
+	background: #fff;
+	color: #222;
+}
+.btn:hover
+{
+	background: #03b6cb;
+	color: #fff;
+}
+.btn-dark
+{
+background: #222;
+color: #fff;		    
+}
+.btn-group
+{
+	margin-top: 10px;
+}  		 
+
+.radio
+{
+	display: none;
+}
+.bg-translate
+{
+	background: #0000008a;
+	height: 100vh;
+}
+.text-center 
+{
+	text-align: center;
+}
+.text-white
+{
+	color: #ffffff;
+}
+.btn-next
+{
+	margin-top: 10px;
+	background: #03b6cb;
+	color: #ffffff;
+	float: right;
+}
+.progress_active
+{
+	background: #fff !important;
+}
+.progress_booking
+{	
+  background: #cdcdcd;
+  padding: 15px;
+  min-height: 100px;
+  border-left: 2px solid #222;
+}
+.progress_booking .fa 
+ {
+ 	font-size: 20px;
+    background: #222222;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: #fff;
+ }
+ .padding-0 
+ {
+ 	padding: 0px;
+ 	margin: 0px;
+ }
+ .position-bottom
+ {
+ 	bottom: 0px;
+ 	right: 0px;
+ 	left: 0px;
+ 	position: absolute;
+ }
+
+
+
+.geocoder {
+z-index: 999;
+width: 100%;
+margin-top: 10px;
+}
+.mapboxgl-ctrl-geocoder {
+min-width: 100%;
+}
+#msform {
+width: 100%;
+margin: 25px auto;
+text-align: center;
+position: relative;
+}
+/*progressbar*/
+#progressbar {
+margin-bottom: 30px;
+overflow: hidden;
+/*CSS counters to number the steps*/
+counter-reset: step;
+}
+#progressbar li {
+list-style-type: none;
+color: #222;
+text-transform: uppercase;
+font-size: 14px;
+width: 33.33%;
+float: left;
+position: relative;
+}
+#progressbar li:before {
+content: counter(step);
+counter-increment: step;
+width: 40px;
+line-height: 40px;
+display: block;
+font-size: 20px;
+color: #333;
+background: white;
+border-radius: 3px;
+margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+content: '';
+width: 91%;
+height: 2px;
+background: white;
+position: absolute;
+left: -44.5%;
+top: 18px;
+
+}
+#progressbar li:first-child:after {
+/*connector not needed before the first step*/
+content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+background: #222;
+color: white;
+}
+.bg-white
+{
+background: #fff;
+}
+.equal_height
+{
+display: grid;
+	grid-auto-flow: column;
+	gap: 5%;
+}
+.padding-10
+{
+padding: 20px 10px;
+border-radius: 5px;
+}
+.border-left-right
+{
+border-left: 2px solid #cbe6e8;
+border-right: 2px solid #cbe6e8;
+}
+#payment-btn .btn
+{
+background: #eee;
+color: #222;
+}
+#payment-btn .active
+{
+background: #222 !important;
+color: #fff !important;
+}
+.border-0
+{
+border: none !important;
+}
+.tbl
+{
+border: 1px solid #eee;
+}
+.tbl_cost td 
+{
+font-weight: 600;
+font-size: 14px;
+}
+.btn-theme
+{
+background: #03b7cc;
+color: #fff;
+width: 100%;
+}
+.dropdown-toggle
+{
+width: 100%;
+}
+#car_list_div .dropdown-menu
+{
+width: 100%;
+}
+#car_list_div .dropdown-toggle
+{
+text-align: left;
+}
+#car_list_div .dropdown-toggle span
+{
+float: right;
+margin-top: 8px;
+}
+#car_list_div ul li a
+{
+font-size: 16px;
+}
+#car_list_div ul li img
+{
+width: 50px;
+}
+.fa-check-circle
+{
+font-size: 50px;
+color: #03b6cb;
+}
+#booking_page_logo img
+{
+	height: 55px;
+}
+#toast-container
+{
+	opacity: 1 !important;
+}
+.toast
+{
+	opacity: 1 !important;
+}
+@media only screen and (max-width: 700px) {
+.booking_heading
+{
+    font-size: 20px !important;
+}
+#navigation
+{
+	top: 0px !important;
+	z-index: 9999;
+}
+#booking_page_logo img
+{
+	height: 30px;
+}
+.car_li li {
+	width: 22% !important;
+}
+.car_li li span
+{
+	font-size: 12px !important;
+}
+.booking_section
+{
+	height: auto !important;
+	min-height: 360px !important;
+	max-height: 1100px !important;
+	background-size: 100% 100% !important;
+}
+.tra
+{
+	height: auto !important;
+	padding-bottom: 15px !important;
+}
+.st-nav-help2 .fa {
+    font-size: 15px !important;
+    margin-right: 5px !important;
+    margin-top: 3px;
+}
+.buy-button
+{
+	display: none !important;
+}
+.st-nav-help2 h4 {
+    font-size: 15px !important;
+}
+#progressbar
+{
+	margin: 0px;
+	padding: 0;
+}
+#progressbar li
+{
+	font-size: 12px;
+}
+#progressbar li:before
+{
+	width: 35px;
+line-height: 35px;
+font-size: 18px;
+}
+#progressbar li:after
+{
+	width: 80%;
+	left: -34.4%;
+}
+}
+[class^=uil-]:before, [class*=" uil-"]:before {
+    margin: 5px;
+}
+.cp_con
+{
+    float: right;
+    text-align: center;
+    width: 100%;
+    background: #434343;
+    color: #fff;
+    display: none;
+    padding: 3px 0px;
+}
+.cp_con a
+{
+    color: #fff;
+}
+#none
+{
+    display: none !important;
+}
+@media only screen and (max-width: 780px) {
+.cp_mpbile_header
+{
+	display: block !important;
+}
+.cp_pc_header
+{
+	display: none !important;
+}
+
+  .cp_con
+  {
+    display: block;
+  }
+  
+  .city_btn
+  {
+    display: none !important;
+  }
+  #none
+  {
+    display: block !important;
+  }
+}
+@media (max-width: 991px){
+    #navigation {
+        width: 145%;
+    }
+}
+
+.logo img
+{
+	margin-top: 8px;
+}
+.st-nav-help a
+{
+	position: relative;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #777;
+	text-decoration: none;
+}
+.st-nav-help2
+{
+	padding-top: 25px;
+	list-style: none;
+	padding-left: 10px;
+}
+.st-nav-help2 .fa {
+    float: left;
+    color: #1ebfd1;
+    font-size: 26px;
+    height: 59px;
+    margin-right: 10px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    height: 30px;
+}
+.st-nav-help2 h4 {
+    font-weight: 400;
+    color: #1ebfd1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 17px;
+}
+.st-nav-help 
+{
+	padding-top: 11px;
+	list-style: none;
+}
+.st-nav-help .fa {
+    float: left;
+    color: #1ebfd1;
+    font-size: 26px;
+    height: 59px;
+    margin-right: 10px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-top: 14px;
+    height: 30px;
+}
+.st-nav-help h4 {
+    font-weight: 400;
+    color: #1ebfd1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 17px;
+}
+.st-nav-help h4 span {
+    font-size: 14px;
+    color: #222222;
+}
+
+.mapboxgl-ctrl-geocoder--input
+{
+height: 40px !important;
+}
+.mapboxgl-ctrl-geocoder--icon-search
+{
+top: 10px;
+}
+.car_li
+{
+padding: 0px;
+margin-top: 10px;
+}
+.car_li li:hover
+{
+border: 2px solid #34a2afeb;
+}
+.car_li li
+{
+list-style: none;
+padding: 10px;
+border-radius: 7px;
+background: #ffffffd9;
+float: left; 
+width: 15%;
+height: 75px;
+border: 2px solid #ffffffd9;
+}
+.car_li li span
+{
+font-size: 18px;
+}
+.car_li li img
+{
+width: 50px;
+margin-top: 5px;
+}
+.car_text
+{
+margin-top: 5px;
+}
+.mg-left-10
+{
+margin-left: 10px;
+}
+
+.mg-top-10
+{
+margin-top: 10px;
+}
+
+.car_li_active
+{
+border: 2px solid #34a2afeb !important;
+}
+
+.btn-primary
+{
+  background: #03b6cb !important;
+  border-color: #03b6cb !important;
+color: #fff;
+}
+.btn-group-justified
+{
+width: 100%;
+}
+
+footer .fea.icon-sm
+{
+margin-top: 7px;
+}
+.rounded-circle {
+border-radius: 8px !important;
+}
+.text-primary
+{
+color: #1ebfd1 !important;
+}
+
+#food-btn .active {
+background: #222 !important;
+color: #fff !important;
+}
+#food-btn .btn {
+background: #eee;
+color: #222;
+}
+
+/* Mobile Header */
+.cp_mpbile_header
+{
+	display: none;
+}
+.cp_pc_header
+{
+	display: block;
+}
+#booking_page_logo_mobile img
+{
+	height: 30px;
+	margin-left: 10px;
+}
+#menu-item_mobile
+{
+	margin-right: 20px;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  position: absolute;
+  color: #999999;
+}
+
+input[type="date"] {
+  color: #ffffff;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
+}

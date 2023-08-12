@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="container">
+    <h1>Payment</h1>
+    <p>Pay for your booking:</p>
+    <form action="{% url 'payment_success' %}" method="get">
+     {% csrf_token %}
+      <input type="hidden" name="booking_id" value="{{ booking_id }}">
+      <script src="https://checkout.razorpay.com/v1/checkout.js"
+          data-key="rzp_test_ha09Ex7EgW9YKz"
+          data-amount="{{order.amount}}"
+          data-currency="INR"
+          data-order_id="{{order.id}}"
+          data-buttontext="Pay with Razorpay"
+          data-name="Driverwala"
+          data-description="Booking Payment"
+          data-image="{% static 'images/saas/school.png' %}"
+          data-prefill.name="kajal"
+          data-prefill.email="kajaltadavi12@gmail.com"
+          data-theme.color="#F37254">
+      </script>
+    </form>
+  </div>
+{% endblock %}

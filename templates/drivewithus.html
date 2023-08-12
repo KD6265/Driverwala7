@@ -1,0 +1,434 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggle .slider {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle .slider:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle input[type="checkbox"]:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .toggle input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+</style>
+<div id="ajax_dashboard">
+  
+<section class="bg-half-170 d-table w-100" style="background: url('images/busi.jpg') center center;">
+    <div class="container">
+        <div class="row align-items-center">            
+            <div class="col-lg-12 offset-lg-1 col-md-12 order-1 order-md-2">
+                <div class="title-heading mt-4">
+                    <h3 class="display-4 fw-normal mb-3">Start Earning Immediately</h3>
+                    <p class="para-desc text-muted">You can drive and make as much as you want. And, the more you drive, the more you could make. Plus, your fares get automatically deposited weekly. Download the partner app and register</p>
+                    <div class="mt-4 pt-2">
+                        <a href="javascript:void(0)" class="btn btn-primary mt-2 me-2"><i class="uil uil-apple"></i> App Store</a>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary mt-2"><i class="uil uil-google-play"></i> Play Store</a>
+                        <a href="#filltheform" class="btn btn-primary mt-2"><i class="uil uil-pen"></i> Fill the form</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container--> 
+</section>
+<div>
+  <label class="toggle">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+</div>
+<section class="section" style="background: #f7f7f7; padding-bottom: 50px;" id="filltheform">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="bg-white shadow rounded position-relative overflow-hidden">
+                    <div class="text-center" >
+                        <ul class="nav nav-pills nav-justified flex-sm-row mb-0" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link py-2 active rounded-0" id="User-login" data-bs-toggle="pill" href="#user" role="tab" aria-controls="user" aria-selected="false">
+                                    <div class="text-center py-2">
+                                        <h6 class="mb-0">Fill the form</h6>
+                                    </div>
+                                </a><!--end nav link-->
+                            </li><!--end nav item-->                                                                   
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-4 text-uppercase">Driver Details</h3>
+                                <div class="tab-content px-5 mt-5" id="pills-tabContent">
+                                  <div class="card border-0 tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="User-login">
+                                    <form class="card-body" method="POST" enctype="multipart/form-data"action="">
+                                      {% csrf_token %}
+                                        <div class="row">
+                                          <!--First Name-->   
+                                          <div class="col-md-4">
+                                            <div class="mb-4">
+                                              <label for=" {{form.fname.auto_id}}" class="form-label">{{form.fname.label}}<span class="text-danger">*</span></label>
+                                              <div class="form-icon position-relative">
+                                                {{ form.fname }}
+                                              </div>
+                                            </div>
+                                          </div>  
+                                          <!--end col-->
+                  
+                                        <!--Middle Name-->
+                                        <div class="col-md-4">
+                                          <div class="mb-4">
+                                            <label for="{{form.mname.auto_id}}" class="form-label">{{form.mname.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{ form.mname }}
+                                            </div>
+                                          </div>
+                                        </div>
+                                         <!--end col-->
+                  
+                                         <!--Last Name-->
+                                        <div class="col-md-4">
+                                          <div class="mb-4">
+                                            <label for="{{form.lname.auto_id}}" class="form-label">{{form.lname.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{ form.lname }}
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--end col-->
+                    
+                                        <!--Phone-->
+                                        <div class="col-md-6">
+                                           <div class="mb-3">
+                                            <label for="{{form.phone.auto_id}}" class="form-label">{{form.phone.label}} <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.phone}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                                         
+                                        <!--Email-->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                           <label for="{{form.email.auto_id}}" class="form-label">{{form.email.label}} <span class="text-danger">*</span></label>
+                                           <div class="form-icon position-relative">
+                                             {{form.email}}
+                                           </div>
+                                         </div>
+                                       </div> 
+                                       <!--end col-->
+                                      
+
+                                        <!--State-->   
+                                        <div class="col-md-4">
+                                          <div class="mb-4">
+                                            <label for=" {{form.state.auto_id}}" class="form-label">{{form.state.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{ form.state }}
+                                            </div>
+                                          </div>
+                                        </div>  
+                                        <!--end col-->
+                                       
+                                        <!--District-->   
+                                        <div class="col-md-4">
+                                          <div class="mb-4">
+                                            <label for=" {{form.district.auto_id}}" class="form-label">{{form.district.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{ form.district }}
+                                            </div>
+                                          </div>
+                                        </div>  
+                                        <!--end col-->
+                                        <!--Subdistrict-->   
+                                        <div class="col-md-4">
+                                          <div class="mb-4">
+                                            <label for=" {{form.subdistrict.auto_id}}" class="form-label">{{form.subdistrict.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{ form.subdistrict }}
+                                            </div>
+                                          </div>
+                                        </div>  
+                                        <!--end col-->
+
+                                        <!--Address-->
+                                        <div class="col-md-12">
+                                          <div class="mb-3">
+                                           <label for="{{form.address.auto_id}}" class="form-label">{{form.address.label}} <span class="text-danger">*</span></label>
+                                           <div class="form-icon position-relative">
+                                             {{form.address}}
+                                           </div>
+                                         </div>
+                                       </div> 
+                                       
+                                        
+        
+                                
+                                        <!--Zip / Postal Code-->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label for="{{form.zipcode.auto_id}}" class="form-label">{{form.zipcode.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.zipcode}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                  
+                                         <!--State-->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label for="{{form.state.auto_id}}" class="form-label">{{form.state.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.state}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                                        
+                                        <!--Aadhar Number-->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label for="{{form.aadharno.auto_id}}" class="form-label">{{form.aadharno.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.aadharno}}
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--end col-->
+                                        <!--Age-->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label for="{{form.age.auto_id}}" class="form-label">{{form.age.label}}<span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.age}}
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--end col-->
+                  
+                                        <!--Driver_type -->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label class="{{form.driver_type.auto_id}}">{{form.driver_type.label}} <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                {{form.driver_type}} 
+                                            </div> 
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                  
+                                        <!--vytpe Name -->
+                                        <div class="col-md-6">
+                                          <div class="mb-3">
+                                            <label class="{{form.vytpe.auto_id}}">{{form.vytpe.label}} <span class="text-danger">*</span></label>
+                                              <div class="form-icon position-relative">
+                                                {{form.vytpe}}
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--end col-->
+                  
+                                        <div class="col-md-12">
+                                          <div class="mb-3">
+                                            <label class="{{form.driving_licence.auto_id}}">{{form.driving_licence.label}}  <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.driving_licence}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                                
+                                        <!--Your Photo-->
+                                         <div class="col-md-12">
+                                          <div class="mb-3">
+                                            <label class="{{form.selfie.auto_id}}">{{form.selfie.label}}  <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                              {{form.selfie}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <!--end col-->
+                                       
+                  
+                                        <!--password-->
+                                         <div class="col-md-12">
+                                          <div class="mb-3">
+                                            <label for="{{form.password.auto_id}}" class="form-label">{{form.password.label}} </label>
+                                            <div class="form-icon position-relative">
+                                              {{form.password}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                      
+                                        <!--Confirm password-->
+                                        <div class="col-md-12">
+                                          <div class="mb-3">
+                                            <label for="{{form.cpassword.auto_id}}" class="form-label">{{form.cpassword.label}} </label>
+                                            <div class="form-icon position-relative">
+                                              {{form.cpassword}}
+                                            </div>
+                                          </div>
+                                        </div> 
+                                      
+
+                                        <div class="col-md-12" id="error_message">
+                                          {% if form.errors %}
+                                                <div class="alert alert-danger">
+                                                {{ form.errors }}
+                                                </div>
+                                          {% endif %}
+                                          {% if messages %}
+                                          <ul class="messages">
+                                              {% for message in messages %}
+                                                  <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                              {% endfor %}
+                                          </ul>
+                                          {% endif %}
+                                        </div>
+                                
+                                        <div class="col-md-12">
+                                          <button
+                                            type="Submit"
+                                            id="send_driver_inquery"
+                                            class="btn btn-primary"
+                                          >
+                                            Submit
+                                          </button>
+                                        </div>
+                                        <!--end col-->
+                                      </div>
+                                      <!--end row-->
+                                    </form>
+                                    <!--end form-->
+                                  </div>
+                                  <!--end teb pane-->
+                                </div>
+                                
+                              </div>{% comment %} driver from  end{% endcomment %}
+                    </div><!--end tab content-->
+                </div>
+            </div><!--end col-->
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container " style="margin-bottom:50px">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">We provide benifits to our team</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Drivars <span class="text-primary fw-bold">Advantage</span>  </p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/hands.png" class="avatar avatar-small" alt="hire driver company">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Regular Trip</h4>
+                        <p class="text-muted mb-0">We are getting good amount of trips.So you dont have to wait for the drive.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/t1.png" class="avatar avatar-small" alt="Driver in india">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Live Tracking</h4>
+                        <p class="text-muted mb-0">Track your customer location. It helps you to go on time.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/r1.png" class="avatar avatar-small" alt="Driver in india">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Good Earning</h4>
+                        <p class="text-muted mb-0">Our priority is happy team, we spend most of the payment on our team.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/d1.png" class="avatar avatar-small" alt="Driver in india">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Ontime Payment</h4>
+                        <p class="text-muted mb-0">We settle payment on the same day when you request us.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/i1.png" class="avatar avatar-small" alt="Driver in india">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Medical Insurance</h4>
+                        <p class="text-muted mb-0">Our all teams are insured from the first day of work.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="features text-center">
+                    <div class="image position-relative d-inline-block">
+                        <img src="static/images/h1.png" class="avatar avatar-small" alt="Driver in india">
+                    </div>
+
+                    <div class="content mt-4">
+                        <h4 class="title-2">Flexible Timing</h4>
+                        <p class="text-muted mb-0">You can choose your work time. Drive as you want. </p>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+</div>
+
+{% endblock content %} 
+

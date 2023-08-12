@@ -1,0 +1,54 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div id="ajax_dashboard">
+    <section class="section bg-light" style="margin-top: 80px; padding-top: 30px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                     
+                        <h4 class="title mb-4">Please Select Location</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">Help Us With Your Location To Serve You Better. </p>
+
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mt-5">
+                    <div class="features text-center">
+                        <div class="position-relative">
+                            <img src="{% static 'img/Current%20location-pana.svg' %}" class="avatar avatar-ex-large shadow" alt="Driver hire in india">
+                        </div>
+                        <div class="content mt-5 pt-3">
+                            <h4 class="title-2"><a href="javascript:void(0)" class="text-dark">Use My Current Location</a></h4>
+                            <p class="text-muted mb-0">We’ll Need Permission To Use Your Device’s Location</p>
+                        </div>
+                        <a href="javascript:void(0)" id="get-mylocation" style="width: 70%; margin-top: 20px !important;" class="btn btn-primary mt-2 me-2">USE CURRENT LOCATION</a>
+                    </div>
+                </div><!--end col-->
+                
+                <div class="col-lg-6 col-md-6 col-12 mt-5">
+                    <div class="features text-center">
+                        <div class="">
+                            <img src="{% static 'img/Directions-bro.svg' %}" class="avatar avatar-ex-large shadow" alt="Driver hire in india">
+                        </div>
+                        <div class="content mt-5 pt-3">
+                            <h4 class="title-2"><a href="javascript:void(0)" class="text-dark">Select Manually</a></h4>
+                            <p class="text-muted mb-0">Search By Your City</p>
+                        </div>
+                         <a href="{% url 'city' %}" style="width: 70%; margin-top: 20px !important;" class="btn btn-primary mt-2 me-2">SELECT MANUALLY</a>
+                    </div>
+                </div><!--end col-->
+                
+               
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+    <!--end section-->
+</div>
+
+
+{% endblock content %} 

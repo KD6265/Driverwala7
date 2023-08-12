@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="bg-half bg-light d-table w-100" style="background-image: url('http://127.0.0.1:8000/static/images/busi.jpg');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h1 class="title">Booking Details (ID-{{booking.id}})</h1>
+                        <hr class="py-2">
+                    </div>
+                </div>  <!--end col-->
+            </div><!--end row-->
+        </div> <!--end container-->
+        <div class="container">
+            <caption><h2>Driver Details</h2></caption>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th  class="col-6"></th>
+                    <th  class="col-6">detail</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-6">ID</td>
+                    <td class="col-6">{{booking.driver.id}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Email</td>
+                    <td class="col-6">{{booking.driver.email}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Age</td>
+                    <td class="col-6">{{booking.driver.age}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">type</td>
+                    <td class="col-6">{{booking.driver.driver_type}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </div>
+            <div class="container">
+        <div class="container">
+            <caption><h2>Customer Details</h2></caption>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th  class="col-6"></th>
+                    <th  class="col-6">detail</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-6">ID</td>
+                    <td class="col-6">{{booking.customer.id}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Name</td>
+                    <td class="col-6">{{booking.customer.name}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Email</td>
+                    <td class="col-6">{{booking.customer.email}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Mobile</td>
+                    <td class="col-6">{{booking.customer.mobile}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </div>
+            
+        <div class="container">
+            <caption><h2>Booking Details</h2></caption>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th  class="col-6"></th>
+                    <th  class="col-6">detail</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-6">ID</td>
+                    <td class="col-6">{{booking.id}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Name</td>
+                    <td class="col-6">{{booking.customer.name}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Pickup Location</td>
+                    <td class="col-6">{{booking.pickup_location}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Drop Location</td>
+                    <td class="col-6">{{booking.drop_location}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Vehicle Type</td>
+                    <td class="col-6">{{booking.vehicle_type}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Vehicle SubType</td>
+                    <td class="col-6">{{booking.vehicle_sub_type}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Pickup Date</td>
+                    <td class="col-6">{{booking.pickup_date}}</td>
+                  </tr>
+                  <tr>
+                    <td class="col-6">Drop Location</td>
+                    <td class="col-6">{{booking.amount}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </div>
+            
+            <p class="text-dark text-center">Book More Drivers... <a href="{% url 'city'%}"> View Drivers</a>
+    
+    </section>
+{% endblock %}
+
+
+
+
+=

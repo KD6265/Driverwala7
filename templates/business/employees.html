@@ -1,0 +1,494 @@
+
+
+       <script type="text/javascript">
+           window.location.href = "../../businessaccount.html";
+       </script>
+       <!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from drivars.com/v2/business/employees by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Feb 2023 16:05:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Business Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/f1.png">
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    <!-- Vectormap -->
+    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendor/owl-carousel/owl .carousel.css" rel="stylesheet">
+    <link href="vendor/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+    <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+            var path='index.html';
+            var login_id='';
+    </script>
+    <script src="../../../cdn.socket.io/3.1.3/socket.io.min.js"></script>
+    <script src="../../js/soket5bf0.js?v=1677168324"></script>
+
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <!-- <img class="logo-abbr" src="/v2/business/images/logo/Drivars2021vb.png" alt=""> -->
+                <img class="logo-compact" src="logo/drivars_logo_white.png" alt="" style="max-width: 230px;">
+                <img class="brand-title" src="logo/drivars_logo_white.png" alt="" style="max-width: 230px;">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="custom-control custom-switch toggle-switch text-right mr-5 mb-2" style="margin-top: 10px; padding-right: 0px;">
+                            
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="_br/__b_Notice_/b__%20%20Undefined%20variable_%20users%20in%20_b_/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php_/b_%20on%20line%20_b_97_/b_/index.html" width="20" alt=""/>
+                                    <div class="header-info">
+                                        <span class="text-black"><br />
+<b>Notice</b>:  Undefined variable: users in <b>/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php</b> on line <b>99</b><br />
+<br />
+<b>Notice</b>:  Trying to get property 'fname' of non-object in <b>/home2/codepjxc/drivars.com/v2/business/app/views/layouts/default.php</b> on line <b>99</b><br />
+</span>
+                                        <p class="fs-12 mb-0">Business Account</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="Profile.html" class="dropdown-item ai-icon">
+                                        <i class="fa fa-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="Logout.html" class="dropdown-item ai-icon">
+                                        <i class="fa fa-power-off"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a href="index.html"><i class="flaticon-381-networking"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li><a href="Profile.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Setting</span>
+                        </a>
+                    </li>
+                    <li><a href="employees.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Employees</span>
+                        </a>
+                    </li>
+                    <li><a href="attendance.html" aria-expanded="false">
+                            <i class="flaticon-381-user"></i>
+                            <span class="nav-text">Attendance</span>
+                        </a>
+                    </li>
+                    
+                    <li><a href="payment.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Payments</span>
+                        </a>
+                    </li>
+
+                    <li><a href="tracking.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Track Your Driver</span>
+                        </a>
+                    </li>
+
+                    <li><a href="help.html" aria-expanded="false">
+                            <i class="flaticon-381-layer-1"></i>
+                            <span class="nav-text">Help</span>
+                        </a>
+                    </li>
+                    
+                    <li><a href="logout-2.html" aria-expanded="false">
+                            <i class="flaticon-381-settings-2"></i>
+                            <span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+        
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+            <br />
+<b>Notice</b>:  Undefined index: business_master_id in <b>/home2/codepjxc/drivars.com/v2/business/app/views/employees/index.php</b> on line <b>9</b><br />
+<br />
+<b>Notice</b>:  Trying to get property 'employee' of non-object in <b>/home2/codepjxc/drivars.com/v2/business/app/views/employees/index.php</b> on line <b>11</b><br />
+<style type="text/css">
+
+.rating-stars {
+    display: block;
+    width: 50vmin;
+    padding: 1.75vmin 10vmin 2vmin 3vmin;
+    background: linear-gradient(90deg, #ffffff90 40vmin, #fff0 40vmin 100%);
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.rating-counter {
+    font-size: 5.5vmin;
+    font-family: Arial, Helvetica, serif;
+    color: #ffffff;
+    width: 10vmin;
+    text-align: center;
+    background: #03b7cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    line-height: 10vmin;
+}
+
+.rating-counter:before {
+    content: "0";
+    transition: all 0.25s ease 0s;  
+}
+
+
+
+input { display: none; }
+
+label {
+    width: 5vmin;
+    height: 5vmin;
+    background: #000b;
+    display: inline-flex;
+    cursor: pointer;
+    margin: 0.5vmin 0.65vmin;
+    transition: all 1s ease 0s; 
+    clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+}
+
+label[for=rs0] {
+    display: none;
+}
+
+label:before {
+    width: 90%;
+    height: 90%;
+    content: "";
+    background: orange;
+    z-index: -1;
+    display: block;
+    margin-left: 5%;
+    margin-top: 5%;
+    clip-path: polygon(50% 0%, 66% 32%, 100% 38%, 78% 64%, 83% 100%, 50% 83%, 17% 100%, 22% 64%, 0 38%, 34% 32%);
+    background: linear-gradient(90deg, yellow, orange 30% 50%, #184580 50%, 70%, #173a75 100%);
+    background-size: 205% 100%;
+    background-position: 0 0;
+}
+
+label:hover:before {
+    transition: all 0.25s ease 0s;      
+}
+
+input:checked + label ~ label:before {
+    background-position: 100% 0;
+    transition: all 0.25s ease 0s;  
+}
+
+input:checked + label ~ label:hover:before {
+    background-position: 0% 0
+}
+
+
+
+
+
+#rs1:checked ~ .rating-counter:before {
+    content: "1";
+}
+
+#rs2:checked ~ .rating-counter:before {
+    content: "2";
+}
+
+#rs3:checked ~ .rating-counter:before {
+    content: "3";
+}
+
+#rs4:checked ~ .rating-counter:before {
+    content: "4";
+}
+
+#rs5:checked ~ .rating-counter:before {
+    content: "5";
+}
+
+label + input:checked ~ .rating-counter:before {
+    color: #ffab00 !important;
+    transition: all 0.25s ease 0s;
+}
+
+
+
+
+
+label:hover ~ .rating-counter:before {
+    color: #9aacc6 !important;
+    transition: all 0.5s ease 0s;   
+    animation: pulse 1s ease 0s infinite;
+}
+
+@keyframes pulse {
+      50% { font-size: 6.25vmin; }
+}
+
+label[for=rs1]:hover ~ .rating-counter:before {
+    content: "1" !important;
+}
+
+label[for=rs2]:hover ~ .rating-counter:before {
+    content: "2" !important;
+}
+
+label[for=rs3]:hover ~ .rating-counter:before {
+    content: "3" !important;
+}
+
+label[for=rs4]:hover ~ .rating-counter:before {
+    content: "4" !important;
+}
+
+label[for=rs5]:hover ~ .rating-counter:before {
+    content: "5" !important;
+}
+
+
+input:checked:hover ~ .rating-counter:before {
+    animation: none !important;
+    color: #ffab00 !important ;
+}
+
+</style>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Employees Details</h4>
+            </div>
+            <div class="card-body">
+                <!-- Nav tabs -->
+                <div class="default-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home"><i class="la la-home mr-2"></i> Manager</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile"><i class="la la-user mr-2"></i> Drivers</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel">
+                            <div class="pt-4">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="6">Manager</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Manager id</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <td>Register Date</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <br />
+<b>Notice</b>:  Trying to get property 'm_id' of non-object in <b>/home2/codepjxc/drivars.com/v2/business/app/views/employees/index.php</b> on line <b>198</b><br />
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <div class="pt-4">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>                                        
+                                        <tr>
+                                            <th>Employee id</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <td>Register Date</td>
+                                            <td>Type</td>
+                                            <td>Cost</td>
+                                            <td>Review</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="basicModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Write a review</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="team_id" id="team_id">
+                <div class="rating-stars">
+                    <input type="radio" name="rating" id="rs0" value="0" checked><label for="rs0"></label>
+                    <input type="radio" name="rating" id="rs1" value="1"><label for="rs1"></label>
+                    <input type="radio" name="rating" id="rs2" value="2"><label for="rs2"></label>
+                    <input type="radio" name="rating" id="rs3" value="3"><label for="rs3"></label>
+                    <input type="radio" name="rating" id="rs4" value="4"><label for="rs4"></label>
+                    <input type="radio" name="rating" id="rs5" value="5"><label for="rs5"></label>
+                    <span class="rating-counter"></span>
+                </div>
+                <textarea class="form-control" rows="3" style="margin-top: 10px; border-radius: 10px;" id="remark" placeholder="Write a review"></textarea>
+                <div id="error_review" style="margin-top:5px;"></div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="submit_review">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © 2021 <a href="#">drivars.com</a> </p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+    <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/deznav-init.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.js"></script>
+    
+    <!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    
+    <!-- Datatable -->
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="js/plugins-init/datatables.init.js"></script>
+    <!-- Dashboard 1 -->
+    <script src="js/dashboard/dashboard-1.js"></script>
+    <script src="vendor/toastr/js/toastr.min.js"></script>    
+    <script src="js/my5bf0.js?v=1677168324"></script>
+    <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from drivars.com/v2/business/employees by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Feb 2023 16:05:48 GMT -->
+</html>
